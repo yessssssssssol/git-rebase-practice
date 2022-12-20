@@ -2,8 +2,6 @@
 
 git rebase에 익숙해지기 위한 세 가지 Test가 진행될 예정입니다.
 
-아래 설명을 잘 읽고 공통 시험과 각 분야 (F/B)별 시험을 진행해주세요.
-
 테스트는 `팀 프로젝트(나, 김코드, 김개발) 상황을 가정`하여 진행합니다.
 
 각 테스트에 따른 제출 자료를 잘 읽고 답안을 누락없이 제출해주세요.
@@ -11,6 +9,10 @@ git rebase에 익숙해지기 위한 세 가지 Test가 진행될 예정입니�
 `commit 메시지`와 `branch 네이밍` convention을 잘 지켜주세요.
 
 제한 시간은 2시간이며, 1번과 2번 답안은 반드시 제출해주시고 시간이 부족한 경우 3번 답안은 개인 별로 정리하는 시간을 가져주세요.
+
+❗️ _[참고] 테스트 시 [Git Workflow & Rebase](https://study.wecode.co.kr/session/79) 세션 자료를 참고해서 진행해주세요!_
+
+❗️ _[참고] 작업 시 `pwd` / `ls`로 현재 작업하고 있는 경로를 잘 확인해주시고, `git branch` 명령어로 현재 작업하고 있는 branch를 잘 확인해주세요!_
 
 <br>
 <br>
@@ -485,10 +487,11 @@ $ git config --global core.editor "vim"
 ## 2. rebase -i
 
 1. `rebase` 키워드와 `-i`를 사용하여 과정에 따라 main/master branch의 내용을 `feature/login` 브랜치에 병합합니다.
+<br/> interactive rebase 진행 중, commit을 squash하여 한 개의 커밋으로 만들도록 합니다.
 
-2. `git log`를 입력해 하나로 커밋이 합쳐진 것을 확인한 후 `push`하여 `PR`을 생성합니다.
+2. `git log`를 입력해 하나로 커밋이 합쳐진 것을 확인한 후 `push`합니다.
 
-3. 마찬가지로 `PR`에서도 commit이 하나로 합쳐진 모습을 확인하고 캡쳐합니다.
+3. 마찬가지로 `PR`에서도 commit이 하나로 합쳐진 모습을 확인하고, 캡쳐합니다.
 
 <!-- TODO: 3의 이해를 도울 수 있는 예시 이미지 -->
 
