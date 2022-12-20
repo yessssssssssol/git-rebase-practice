@@ -388,8 +388,8 @@ git rebase에 익숙해지기 위한 세 가지 Test가 진행될 예정입니�
 2. `Router.js`에서 각 Route를 다음과 같이 수정해주세요.
 
    ```jsx
-   <Route path="/" element={<Main />} />
-   <Route path="/sign-in" element={<App />} />
+   <Route path="/login" element={<Login />} />
+   <Route path="/main" element={<Main />} />
    ```
 
 3. Router가 수정되었다는 commit을 생성합니다.<br>
