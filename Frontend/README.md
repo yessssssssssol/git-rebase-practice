@@ -540,7 +540,7 @@ $ git config --global core.editor "vim"
 
 ## 5. 과제 제출
 
-1. `2-2`, `4-3`에서 캡쳐한 파일을 `Google Classroom`에 제출해주세요.
+1. `2-1`, `4-3`에서 캡쳐한 파일을 `Google Classroom`에 제출해주세요.
 
 <br>
 <br>
