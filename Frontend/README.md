@@ -96,17 +96,7 @@ git rebase에 익숙해지기 위한 세 가지 Test가 진행될 예정입니�
 
 1.  `Frontend/git-rebase-test/` 경로의 `main` 브랜치에서 `feature/login` 브랜치를 생성해 주세요.
 
-2.  `src` 폴더 안에 `pages` 폴더를 생성해 주시고 과제를 진행하기 위한 `Login` 폴더 및 파일들을 생성해 주세요.
-
-    ```shell
-    src
-    └── pages
-          └── Login
-                └── Login.js
-                └── Login.css
-    ```
-
-3.  `Login.js`에 아래의 코드를 입력해 주세요.
+2.  `Login.js`에 아래의 코드를 입력해 주세요.
 
     <details>
     <summary>Login.js</summary>
@@ -143,7 +133,7 @@ git rebase에 익숙해지기 위한 세 가지 Test가 진행될 예정입니�
 
      </details>
 
-4.  `Login.css`에 아래의 코드를 입력해 주세요.
+3.  `Login.css`에 아래의 코드를 입력해 주세요.
     <details><summary>Login.css</summary>
        
        ```css
@@ -200,14 +190,14 @@ git rebase에 익숙해지기 위한 세 가지 Test가 진행될 예정입니�
 
     </details>
 
-5.  `Router.js`에서 `/login`의 경로에 로그인 페이지가 routing 되도록 `Login` 컴포넌트를 연결해 주세요.
+4.  `Router.js`에서 `/login`의 경로에 로그인 페이지가 routing 되도록 `Login` 컴포넌트를 연결해 주세요.
 
     ```javascript
     <Route path="/" element={<App />} />
     <Route path="/login" element={<Login />} />
     ```
 
-6.  로그인 레이아웃이 완료되었다는 commit을 생성합니다.<br>
+5.  로그인 레이아웃이 완료되었다는 commit을 생성합니다.<br>
     e.g) `Add: login 페이지 레이아웃 완료`
 
 <br>
@@ -290,17 +280,7 @@ git rebase에 익숙해지기 위한 세 가지 Test가 진행될 예정입니�
 
 1. `main` 브랜치에서 `feature/main` 브랜치를 생성해 주세요.
 
-2. `pages` 폴더 안에 `Main` 폴더 및 파일들을 생성해 주세요.
-
-   ```shell
-   src
-   └── pages
-         └── Main
-               └── Main.js
-               └── Main.css
-   ```
-
-3. `Main.js`에 아래의 코드를 입력해 주세요.
+2. `Main.js`에 아래의 코드를 입력해 주세요.
    <details><summary>Main.js</summary>
 
    ```javascript
@@ -323,7 +303,7 @@ git rebase에 익숙해지기 위한 세 가지 Test가 진행될 예정입니�
 
     </details>
 
-4. `Main.css`에 아래의 코드를 입력해 주세요.
+3. `Main.css`에 아래의 코드를 입력해 주세요.
    <details><summary>Main.css</summary>
 
    ```css
@@ -360,21 +340,21 @@ git rebase에 익숙해지기 위한 세 가지 Test가 진행될 예정입니�
 
     </details>
 
-5. `Router.js`에서 `/`의 경로에 메인 페이지가 routing 되도록 `Main` 컴포넌트를 연결해 주세요.
+4. `Router.js`에서 `/`의 경로에 메인 페이지가 routing 되도록 `Main` 컴포넌트를 연결해 주세요.
 
    ```jsx
    <Route path="/" element={<Main />} />
    <Route path="/login" element={<App />} />
    ```
 
-6. `npm start` 입력 후 아래와 같은 화면이 브라우저에 나오는지 확인해 주세요.
+5. `npm start` 입력 후 아래와 같은 화면이 브라우저에 나오는지 확인해 주세요.
 
 ![git-test-2](https://user-images.githubusercontent.com/37888503/202240758-dffad4ae-aaa3-48d5-af7f-28366dc56181.gif)
 
-7.  메인 페이지 구현이 완료되었다는 commit을 생성합니다.<br>
+6.  메인 페이지 구현이 완료되었다는 commit을 생성합니다.<br>
     e.g) `Add: main 페이지 구현`
 
-8.  해당 브랜치를 `push`하여 `PR (pull request)`을 생성해 주세요.  
+7.  해당 브랜치를 `push`하여 `PR (pull request)`을 생성해 주세요.  
     commit이 commit message 컨벤션을 따르고 있는지 다시 한번 확인해주세요!
 
 <br>
@@ -388,8 +368,8 @@ git rebase에 익숙해지기 위한 세 가지 Test가 진행될 예정입니�
 2. `Router.js`에서 각 Route를 다음과 같이 수정해주세요.
 
    ```jsx
-   <Route path="/login" element={<Login />} />
-   <Route path="/main" element={<Main />} />
+   <Route path='/login' element={<Login />} />
+   <Route path='/main' element={<Main />} />
    ```
 
 3. Router가 수정되었다는 commit을 생성합니다.<br>
@@ -414,8 +394,6 @@ git rebase에 익숙해지기 위한 세 가지 Test가 진행될 예정입니�
 ## 1. 메인 페이지 PR 병합
 
 1. github 레포지토리로 이동 후 `feature/main` PR을 `Rebase and Merge`해주세요.
-
-<!-- TODO: 1에 대한 이미지가 포함된 부연 설명 -->
 
 <br>
 
@@ -493,8 +471,6 @@ $ git config --global core.editor "vim"
 
 3. 마찬가지로 `PR`에서도 commit이 하나로 합쳐진 모습을 확인하고, 캡쳐합니다.
 
-<!-- TODO: 3의 이해를 도울 수 있는 예시 이미지 -->
-
 <br>
 
 ## 3. 과제 제출
@@ -520,7 +496,6 @@ $ git config --global core.editor "vim"
 ## 2. Conflict 확인
 
 1. 내가 작업하던 `feature/login` PR에서 컨플릭트가 발생한 상황을 확인하고, 캡쳐합니다.
-<!-- TODO: 이해를 도울 수 있는 예시 이미지 -->
 
 <br>
 
@@ -537,7 +512,6 @@ $ git config --global core.editor "vim"
 2. 이 때 발생하는 `conflict`를 해결해주시고, 완료되었다면 `push`해주세요.
 
 3. conflict가 해결된 PR을 확인하고, 캡쳐합니다.
-<!-- TODO: 이해를 도울 수 있는 예시 이미지 -->
 
 <br>
 
