@@ -193,8 +193,8 @@ git rebase에 익숙해지기 위한 세 가지 Test가 진행될 예정입니�
 4.  `Router.js`에서 `/login`의 경로에 로그인 페이지가 routing 되도록 `Login` 컴포넌트를 연결해 주세요.
 
     ```javascript
-    <Route path="/" element={<App />} />
-    <Route path="/login" element={<Login />} />
+    <Route path='/' element={<App />} />
+    <Route path='/login' element={<Login />} />
     ```
 
 5.  로그인 레이아웃이 완료되었다는 commit을 생성합니다.<br>
@@ -343,8 +343,8 @@ git rebase에 익숙해지기 위한 세 가지 Test가 진행될 예정입니�
 4. `Router.js`에서 `/`의 경로에 메인 페이지가 routing 되도록 `Main` 컴포넌트를 연결해 주세요.
 
    ```jsx
-   <Route path="/" element={<Main />} />
-   <Route path="/login" element={<App />} />
+   <Route path='/' element={<Main />} />
+   <Route path='/login' element={<App />} />
    ```
 
 5. `npm start` 입력 후 아래와 같은 화면이 브라우저에 나오는지 확인해 주세요.
