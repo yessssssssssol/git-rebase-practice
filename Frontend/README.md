@@ -190,11 +190,11 @@ git rebase에 익숙해지기 위한 세 가지 Test가 진행될 예정입니�
 
     </details>
 
-4.  `Router.js`에서 각 경로에 따라 routing 되도록 컴포넌트를 연결해 주세요.
+4.  `Router.js`에서 login에 연결되어 있는 routing 경로를 signin으로 변경해주세요.
 
     ```javascript
     <Route path='/' element={<Main />} />
-    <Route path='/login' element={<Login />} />
+    <Route path='/signin' element={<Login />} />
     ```
 
 5.  로그인 레이아웃이 완료되었다는 commit을 생성합니다.<br>
@@ -340,21 +340,14 @@ git rebase에 익숙해지기 위한 세 가지 Test가 진행될 예정입니�
 
     </details>
 
-4. `Router.js`에서 각 경로에 따라 routing 되도록 컴포넌트를 연결해 주세요.
-
-   ```jsx
-   <Route path='/' element={<Main />} />
-   <Route path='/login' element={<Login />} />
-   ```
-
-5. `npm start` 입력 후 아래와 같은 화면이 브라우저에 나오는지 확인해 주세요.
+4. `npm start` 입력 후 아래와 같은 화면이 브라우저에 나오는지 확인해 주세요.
 
 ![git-test-2](https://user-images.githubusercontent.com/37888503/202240758-dffad4ae-aaa3-48d5-af7f-28366dc56181.gif)
 
-6.  메인 페이지 구현이 완료되었다는 commit을 생성합니다.<br>
+5.  메인 페이지 구현이 완료되었다는 commit을 생성합니다.<br>
     e.g) `Add: main 페이지 구현`
 
-7.  해당 브랜치를 `push`하여 `PR (pull request)`을 생성해 주세요.  
+6.  해당 브랜치를 `push`하여 `PR (pull request)`을 생성해 주세요.  
     commit이 commit message 컨벤션을 따르고 있는지 다시 한번 확인해주세요!
 
 <br>
